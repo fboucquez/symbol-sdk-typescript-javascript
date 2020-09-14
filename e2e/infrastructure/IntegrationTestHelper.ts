@@ -51,7 +51,7 @@ export class IntegrationTestHelper {
     public networkCurrencyDivisibility: number;
     public service = new BootstrapService();
     public config: StartParams;
-    public startEachTime = true;
+    public startEachTime = false;
 
     private async startBootstrapServer(): Promise<{ accounts: string[]; apiUrl: string }> {
         this.config = {
